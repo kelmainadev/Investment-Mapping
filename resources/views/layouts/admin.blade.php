@@ -29,6 +29,8 @@
     <div>
         <div class="top-bar">
             <div class="top-bar-left">
+                <h3>{{ config('app.name', 'Lar') }}</h3>
+            </div>
                 @if (Auth::guest())
 
             </div>
