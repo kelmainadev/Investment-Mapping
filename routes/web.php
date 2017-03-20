@@ -34,3 +34,7 @@ Route::group(['prefix' => 'client'], function () {
   Route::get('/password/reset/{token}', 'ClientAuth\ResetPasswordController@showResetForm');
 });
 Route::resource('products','ProductController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
