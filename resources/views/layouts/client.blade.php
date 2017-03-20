@@ -84,23 +84,23 @@
     {{--Navigation bar ends here--}}
 
     {{--This is side Navigation--}}
-    <div class="side-navigation" style="width: 300px; background-color: whitesmoke; margin-top: 50px;">
+    <div class="side-navigation" style="height: 800px; width: 300px; background-color: whitesmoke; margin-top: 50px;">
         <ul class="menu vertical">
             <li ><a href="#"></i>Home</a></li>
-            <li><a href="#">Categories</a></li>
-            <li class="divider"> Manage Products and clients</li>
-            <li><a href="#">products</a></li>
-            <li><a href="#">Client Enquiries</a></li>
-            <li ><a href="#"></i>Home</a></li>
-            <li><a href="#">Categories</a></li>
-            <li class="divider"> Manage Products and clients</li>
-            <li><a href="#">products</a></li>
-            <li><a href="#">Client Enquiries</a></li>
-            <li ><a href="#"></i>Home</a></li>
-            <li><a href="#">Categories</a></li>
-            <li class="divider"> Manage Products and clients</li>
-            <li><a href="#">products</a></li>
-            <li><a href="#">Client Enquiries</a></li>
+            <li><a href="#">Products</a></li>
+            <li class="divider"> Manage Investments</li>
+            <li><a href="#">products invested in</a></li>
+            <li><a href="#">Enquiries</a></li>
+            <li ><a href="#"></i>Messages</a></li>
+            <li><a href="#">Notifications</a></li>
+            <li class="divider"> Profile</li>
+            {{--<li><a href="#">products</a></li>--}}
+            {{--<li><a href="#">Client Enquiries</a></li>--}}
+            {{--<li ><a href="#"></i>Home</a></li>--}}
+            {{--<li><a href="#">Categories</a></li>--}}
+            {{--<li class="divider"> Manage Products and clients</li>--}}
+            {{--<li><a href="#">products</a></li>--}}
+            {{--<li><a href="#">Client Enquiries</a></li>--}}
         </ul>
     </div>
 

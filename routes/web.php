@@ -33,3 +33,4 @@ Route::group(['prefix' => 'client'], function () {
   Route::get('/password/reset', 'ClientAuth\ForgotPasswordController@showLinkRequestForm');
   Route::get('/password/reset/{token}', 'ClientAuth\ResetPasswordController@showResetForm');
 });
+Route::resource('products','ProductController');
