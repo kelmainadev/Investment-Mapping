@@ -21,53 +21,49 @@
         ]) !!};
     </script>
 </head>
-<div>
-<div class="top-bar">
-    <div class="top-bar-left">
-<h3>{{ config('app.name', 'Lar') }}</h3>
-    </div>
-    <div class="top-bar-right">
-        <ul class="menu dropdown">
-            <!-- Authentication Links -->
-            @if (Auth::guest())
-                <li><a href="{{ route('login') }}">Login</a></li>
-                <li><a href="{{ route('register') }}">Register</a></li>
-            @else
-                <li class="menu align-right">
+<body>
+    <div>
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <h3>{{ config('app.name', 'Lar') }}</h3>
+            </div>
+            <div class="top-bar-right">
+                <ul class="menu dropdown">
+                    <!-- Authentication Links -->
+                    @if (Auth::guest())
+                        <li><a href="{{ route('login') }}">Login</a></li>
+                        <li><a href="{{ route('register') }}">Register</a></li>
+                    @else
+                        <li class="menu align-right">
 
-                    <a href="#" class="dropdown menu" data-toggle="dropdown" role="button" aria-expanded="false">
-                        {{ Auth::user()->name }} <span class="caret"></span>
-                    </a>
-                </li>
-
-                    <ul class=" " >
-
-                        <li>
-                            <a href="{{ route('logout') }}"
-                               onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                Logout
+                            <a href="#" class="dropdown menu" data-toggle="dropdown" role="button" aria-expanded="false">
+                                {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
-
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                {{ csrf_field() }}
-                            </form>
                         </li>
-                    </ul>
-                </li>
-            @endif
-        </ul>
+
+                        <ul class=" " >
+
+                            <li>
+                                <a href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                            </li>
+                        </ul>
+                        </li>
+                    @endif
+                </ul>
+            </div>
+        </div>
     </div>
-</div>
-    </nav>
-</div>
-
-                    <!-- Right Side Of Navbar -->
-
-
+    <div id="app">
         @yield('content')
-</div>
-
+    </div>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
     <script> $(document).foundation();</script>
